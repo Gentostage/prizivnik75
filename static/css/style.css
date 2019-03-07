@@ -10,7 +10,16 @@ nav ul a,
 nav .brand-logo {
   color: #fff;
 }
+.b_add{
 
+  background-color: rgba(6,6,6,0.6) !important;
+
+  color: ;
+  
+}
+.pup{
+  padding-top:100px;
+}
 .radius{
   border-radius: 100px;
 }
@@ -47,12 +56,16 @@ p {
   margin-bottom: -120px;
 }
 .otstup{
-  margin-top: -15px;
-  margin-bottom: 20px;
+
+  margin-top: -6.3333333333%;
+}
+.otstup_b{
+
+  margin-bottom: : -66.3333333333%;
 }
 .timerend{
 
-  position: absolute;
+  margin-top: 17px;
 }
 .minus_text{
   margin-top: -50px;
@@ -65,7 +78,7 @@ p {
 }
 .navigation{
       
-    background-color: rgba(60, 107, 208, 0.8); 
+    background-color: rgba(6,6,6,0.5); 
  
     color: white;
     line-height: 64px;
@@ -80,7 +93,7 @@ img.logo {
   
   width: 40%; 
   margin: 0;
-  margin-left: -320px;
+  margin-left: -220px;
   margin-top: 10px;
   overflow: hidden;
   min-width: 60px
