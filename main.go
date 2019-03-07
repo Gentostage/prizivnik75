@@ -9,10 +9,10 @@ func main() {
 
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 
-	http.HandleFunc("/index", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "index.html")
 	})
 
 	fmt.Println("Server is listening...")
-	http.ListenAndServe(":8181", nil)
+	http.ListenAndServe(":8182", nil)
 }
