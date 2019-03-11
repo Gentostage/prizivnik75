@@ -48,6 +48,14 @@ p {
     min-width: 60px;
 
   }
+
+  .pt_size{
+    width: 280PX;
+    margin: 0;
+    overflow: hidden;
+    min-width: 60px;
+
+  }
 .timer{
   margin-top: 50px;
 }
