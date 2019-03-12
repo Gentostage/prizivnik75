@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -7,6 +7,8 @@
   <title>ПРИЗЫВНИК 75</title>
   <link rel="shortcut icon" href="static/img/ico.png" type="image/x-icon">
   <!-- CSS  -->
+  <link href="static/fonts/Glasten.ttf" rel='stylesheet' type='text/css'>
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="static/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -76,6 +78,10 @@
               <i class="material-icons prefix">phone</i>
               <input id="icon_telephone" type="tel" class="validate white-text">
             </div>
+            <div class="input-field col s12 l12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Сообщение</label>
+            </div>
           </div>
           <p>
             <label>
@@ -111,7 +117,7 @@
           <h5>Составление индивидуального плана с нашими экспертами</h5>
         </div>
       </div>
-      <!--   </div>  я хз зачем он тут закрыт-->
+     
       <div class="row">
         <div class="col s12 l3 center-align">
           <img class="p_size" src="static/img/doctor.png">
@@ -306,7 +312,9 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-        Made by <a class="white-text text-lighten-4" href="http://vk.com/mr_hime">Aleksey Alferov</a>
+        
+      <p>ИП Лякун А.В ОГРНИП 318753600024796; ИНН 751202005413. Компания «Призывник 75» не выдаёт военные билеты, их выдают в стенах военного комиссариата.</p>
+      Made by <a class="white-text text-lighten-4" href="http://vk.com/mr_hime">Aleksey Alferov</a>
       </div>
     </div>
   </footer>
@@ -315,32 +323,26 @@
   <div id="modal1" class="modal">
     <div class="modal-content">
       <div class="row">
-        <form class="col s12 m10">
+        <form class="col s12 m8">
           <div class="row">
 
-            <div class="input-field col s12">
+            <div class="input-field col s12 ">
               <i class="material-icons prefix">account_circle</i>
               <input type="text" class="validate" placeholder="name" id="first_name">
-              <label for="first_name">First name</label>
+              <label for="first_name">Как вас зовут?</label>
             </div>
 
-            <div class=" input-field col s12">
-              <i class="material-icons prefix">account_circle</i>
-              <input type="text" class="validate" placeholder="name" id="Last_name">
-              <label for="lasr name">Last name</label>
-            </div>
 
             <div class="input-field col s12">
               <i class="material-icons prefix">phone</i>
               <input id="icon_telephone" type="tel" class="validate">
-              <label for="telephone">Telephone</label>
+              <label for="telephone">Номер телефона</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <i class="material-icons prefix">email</i>
-              <input type="email" class="validate" id="email">
-              <label for="email">Email</label>
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Сообщение</label>
             </div>
           </div>
 
@@ -408,7 +410,7 @@
         etLastUnit: 4,
         etNumberFontFamily: "Impact",
         etNumberSize: 25,
-        etNumberColor: "white",
+        etNumberColor: "red",
         etNumberPaddingTB: 0,
         etNumberPaddingLR: 6,
         etNumberBackground: "transparent",
