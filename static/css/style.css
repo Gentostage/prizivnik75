@@ -12,12 +12,15 @@ nav .brand-logo {
 }
 .t-block{
   height: 650px;
-  width: 80%;
+  /* width: 80%; */
   margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px
+
   
 }
 .col{
-  color: !important;
+  color: important;
 }
 .b_add{
 
@@ -81,7 +84,7 @@ p {
 }
 .otstup_b{
 
-  margin-bottom: : -66.3333333333%;
+  margin-bottom: -66.3333333333%;
 }
 
 .timerend{
@@ -95,7 +98,7 @@ p {
   margin-top: 10px;
   background-color: red;
   font-size: 18px;
-  margin-bottom: 20px: 
+  margin-bottom: 20px;
 }
 .navigation{
   
@@ -108,7 +111,7 @@ p {
  
 }
 .niz {
-  border-color: :#4f72bb;
+  border-color: #4f72bb;
 }
 img.logo {
   

@@ -5,10 +5,32 @@
     $('.parallax').parallax();
 
   }); // end of document ready
-})(jQuery); // end of jQuery name space
+})(jQuery);
+ // end of jQuery name space
 
+ jQuery(document).ready(function () {
+  $(".carousel.carousel-slider").carousel({
+    fullwidth: true,
+    indicators: true,
+    shift: 1,
+  })
+
+})
+
+
+// Модальное окно через 10 секунд 
+var Modalelem = document.querySelector('.modal');
+var instance = M.Modal.init(Modalelem);
+
+setTimeout(function f() {
+  console.log("modal")
+
+  instance.open()
+},10000)
+
+
+//плавная анимация 
 $(document).ready(function(){
-  //плавная анимация 
   $("a[href*=#]").on("click", function(e){
       var anchor = $(this);
       $('html, body').stop().animate({
@@ -17,24 +39,22 @@ $(document).ready(function(){
       e.preventDefault();
       return false;
   });
-
-  
 });
+
+  //Верстка при подборе экрана 
 
 $(document).ready(function(){
-
-if($(window).width() <= 768){
-  $('#lb_timer').removeClass('left-align');
-};
-if($(window).width() >= 768){
-  $('#lb_timer').addClass('left-align');
-};
-
-  
+  if($(window).width() <= 768){
+    $('#lb_timer').removeClass('left-align');
+  };
+  if($(window).width() >= 768){
+    $('#lb_timer').addClass('left-align');
+  };
 });
 
+
+// Удалить класс при изменение разрешения 
 $(window).resize(function () {
-  // Удалить класс при изменение разрешения 
   if($(window).width() <= 768){
     $('#lb_timer').removeClass('left-align');
   };
