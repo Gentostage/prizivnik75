@@ -9,6 +9,9 @@
 
 
 
+
+
+
 $(document).ready(function(){
   //плавная анимация 
   $("a[href*=#]").on("click", function(e){
@@ -21,6 +24,7 @@ $(document).ready(function(){
   });
 });
 
+
 $(document).ready(function(){
   //Верстка при подборе экрана 
 if($(window).width() <= 768){
@@ -29,9 +33,6 @@ if($(window).width() <= 768){
 if($(window).width() >= 768){
   $('#lb_timer').addClass('left-align');
 };
-
-
-
 });
 
 $(window).resize(function () {

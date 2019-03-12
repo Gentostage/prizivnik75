@@ -8,9 +8,9 @@
   <link rel="shortcut icon" href="static/img/ico.png" type="image/x-icon">
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="static/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="/static/js/jquery-1.11.1.min.js"></script>
 </head>
 
 <body>
@@ -162,16 +162,18 @@
   <a id="rewiews">
 
   </a>
+
   <script>
+    // загрузка карулеи с отзывами
       if($(window).width() >= 768){
-      $('#rewiews').load('carusele_d.html');
-      };
-      // загрузка карулеи с отзывами
-      if($(window).width() <= 768){
-      $('#rewiews').load('carusele_m.html');
-      };
-      </script>
-      
+    $('#rewiews').load('carusele_d.html');
+    };
+    if($(window).width() <= 768){
+    $('#rewiews').load('carusele_m.html');
+    };
+  </script>
+
+    
   <div class="">
     <div class="section">
       <div class="row black-text">
@@ -322,9 +324,10 @@
   </div>
 
   <!--  Scripts-->
-  <script src="static/js/materialize.js"></script>
   <script src="static/js/init.js"></script>
-  <script src="https://e-timer.ru/js/etimer.js"></script>
+  <script src="static/js/materialize.min.js"></script>
+  <script src="static/js/etimer.js"></script>
+  
   <script type="text/javascript">
     jQuery(document).ready(function () {
       $('.modal').modal({
