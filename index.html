@@ -10,7 +10,10 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="static/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <script src="/static/js/jquery-1.11.1.min.js"></script>
+  <!-- <script src="/static/js/jquery-1.11.1.min.js"></script> -->
+  <script src="static/js/jquery-3.0.0.min.js"></script>
+
+  
 </head>
 
 <body>
@@ -255,6 +258,8 @@
       </div>
     </div>
   </footer>
+
+  <!-- Модал  -->
   <div id="modal1" class="modal">
     <div class="modal-content">
       <div class="row">
@@ -300,7 +305,8 @@
     </div>
   </div>
 
-  <div id="t_modal1" class="modal">
+<!-- Модал конец  -->
+  <!-- <div id="t_modal1" class="modal">
     <div class="modal-content">
       <div class="row">
         <form class="col s12">
@@ -311,7 +317,7 @@
                 <img class="p_size" src="t_plan.jpg">
               </div>
               <div class="col s6">
-                <h5>оставление индивидуального плана и изучение (сопоставление) медицинских документов с постановлением
+                <h5>Cоставление индивидуального плана и изучение (сопоставление) медицинских документов с постановлением
                   правительства №565 "Об утверждении Положения военно-врачебной экспертизе"</h5>
               </div>
             </div>
@@ -321,18 +327,17 @@
         </form>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!--  Scripts-->
-  <script src="static/js/init.js"></script>
+
   <script src="static/js/materialize.min.js"></script>
   <script src="static/js/etimer.js"></script>
+  <script src="static/js/init.js"></script>
   
-  <script type="text/javascript">
-    jQuery(document).ready(function () {
-      $('.modal').modal({
 
-      })
+<script type="text/javascript">
+    jQuery(document).ready(function () {
       jQuery(".eTimer").eTimer({
         etType: 0,
         etDate: "01.04.2019.0.0",
@@ -361,52 +366,9 @@
         etNumberShadow: "inset 0px 0px 0px 0px rgba(0, 0, 0, 0.5)"
 
       });
-      jQuery(".eTimer1").eTimer({
-        etType: 0,
-        etDate: "15.07.2019.0.0",
-        etTitleText: "До конца призыва осталось:",
-        etTitleSize: 20,
-        etShowSign: 1,
-        etSep: ":",
-        etFontFamily: "Trebuchet MS",
-        etTextColor: "#fffcfc",
-        etPaddingTB: 15,
-        etPaddingLR: 15,
-        etBackground: "transparent",
-        etBorderSize: 0,
-        etBorderRadius: 0,
-        etBorderColor: "white",
-        etShadow: " 0px 0px 0px 0px transparent",
-        etLastUnit: 4,
-        etNumberFontFamily: "Impact",
-        etNumberSize: 35,
-        etNumberColor: "white",
-        etNumberPaddingTB: 0,
-        etNumberPaddingLR: 8,
-        etNumberBackground: "transparent",
-        etNumberBorderSize: 0,
-        etNumberBorderRadius: 5,
-        etNumberBorderColor: "white",
-        etNumberShadow: "inset 0px 0px 10px 0px transparent"
-      });
     });
   </script>
 
-  <script type="text/javascript">
-    jQuery(document).ready(function () {
-      $(".carousel.carousel-slider").carousel({
-        fullwidth: true,
-        indicators: true,
-        shift: 1,
-      })
-
-    })
-  </script>
-
-  <script type="text/javascript">
-    var delay_popup = 5000;
-    setTimeout("document.getElementById('modal1').style.display='block'", delay_popup);
-  </script>
 
 </body>
 
