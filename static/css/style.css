@@ -10,7 +10,22 @@
   font-family:Glasten; /* Имя шрифта */
   src: src(../fonts/Glasten.ttf); /* Путь к файлу со шрифтом */
  }
+ .input-field>label {
+   color:#ffff !important;
+ }
+.modal{
+  background-color: #464646;
+}
 
+
+label {
+    font-size: .8rem;
+    color: #ffffff;
+}
+[type="checkbox"]+span:not(.lever):before, [type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+ 
+  border: 2px solid #fff;
+ }
 nav ul a,
 nav .brand-logo {
   color: #fff;
