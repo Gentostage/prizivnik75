@@ -6,6 +6,11 @@
  * Made By MaterializeCSS.com
  */
 
+ @font-face {
+  font-family:Glasten; /* Имя шрифта */
+  src: src(../fonts/Glasten.ttf); /* Путь к файлу со шрифтом */
+ }
+
 nav ul a,
 nav .brand-logo {
   color: #fff;
@@ -29,8 +34,13 @@ nav .brand-logo {
   color: black;
   
 }
+.h_font{
+  font-family:Glasten;
+  
+}
 .b_head{
   background-color: rgba(1, 1, 1, 0.4);
+  
 }
 .pup{
   padding-top:100px;
