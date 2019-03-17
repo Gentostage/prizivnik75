@@ -8,7 +8,7 @@
 
  @font-face {
   font-family:Glasten; /* Имя шрифта */
-  src: src(../fonts/Glasten.ttf); /* Путь к файлу со шрифтом */
+  src: src(./fonts/Glasten.ttf); /* Путь к файлу со шрифтом */
  }
  .input-field>label {
    color:#ffff !important;
@@ -16,7 +16,11 @@
 .modal{
   background-color: #464646;
 }
-
+.h_phone
+{
+  width: 200px;
+  
+}
 
 label {
     font-size: .8rem;
@@ -32,6 +36,17 @@ nav .brand-logo {
 }
 .t-block{
   height: 650px;
+  /* width: 80%; */
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px
+
+  
+}
+
+
+.d-block{
+  height: 380px;
   /* width: 80%; */
   margin-top: 50px;
   margin-left: 50px;
@@ -92,6 +107,14 @@ p {
   .pt_size{
     width: 75%;
     margin: 0;
+    overflow: hidden;
+    min-width: 60px;
+
+  }
+  .pd_size{
+    width: 25%;
+    margin: 0;
+    margin-top: 9px;
     overflow: hidden;
     min-width: 60px;
 
