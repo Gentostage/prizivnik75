@@ -12,16 +12,19 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="static/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="static/css/animate.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
   
   <!-- <script src="/static/js/jquery-1.11.1.min.js"></script> -->
   <script src="static/js/jquery-3.0.0.min.js"></script>
-
+  <script src="static/js/wow.min.js"></script>
   
 </head>
 
 <body>
-
-  <div id="index-banner" class="parallax-container b_head">
+  <script>
+    new WOW().init();
+  </script>
+  <div id="index-banner" class="parallax-container b_head wow fadeInDown">
     <div class="navbar-fixed">
       <nav class="navigation">
         <div class="nav-wrapper container ">
@@ -39,10 +42,15 @@
           </ul>
 
           <ul id="nav-mobile" class="sidenav">
-            <li><a href="#rewiews">ОТЗЫВЫ</a></li>
-            <li><a href="#uslugi">УСЛУГИ</a></li>
-            <li><a href="#">СИСОК БОЛЕЗНЕЙ</a></li>
-            <li><a href="#contact">КОНТАКТЫ</a></li>
+            <div class="white-text">
+
+              <li><a href="#rewiews">ОТЗЫВЫ</a></li>
+              <li><a href="#uslugi">УСЛУГИ</a></li>
+              <li><a href="#">СИСОК БОЛЕЗНЕЙ</a></li>
+              <li><a href="#contact">КОНТАКТЫ</a></li>
+              
+              <li><a href="#"><p class="u_icon">+7914-355-80-91</p></a></li>
+            </div>
           </ul>
           <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
@@ -61,17 +69,17 @@
         <img style="width:100%" src="static/img/logo.png" />
       </div>
       <div class="col s12 m6">
-        <h3 class="h_font">ЗАЩИТА ПРАВ ПРИЗЫВНИКОВ</h3>
-        <h4 class=" ">Забайкальский край</h4>
+        <h1 class="white-text">ЗАЩИТА ПРАВ ПРИЗЫВНИКОВ</h1>
+        <h4 class="white-text ">Забайкальский край</h4>
       </div>
       <div class="col s12">
-        <div class="col s12 m4 offset-m3">
+        <div class="white-text col s12 m4 offset-m3 pulimer">
           <h4>До начала призыва осталось:</h4>
         </div>
-        <div id='lb_timer' class="col s12 m3  timerend eTimer"></div>
+        <div id='lb_timer' class=" col s12 m3  timerend eTimer"></div>
       </div>
 
-        <div class="col s12 m12">
+        <div class=" white-text col s12 m12">
           <h5>Успей записаться на бесплатную консультацию!</h5>
         </div>
       <div class=" col s12 m12 center-align b_add">
@@ -96,7 +104,7 @@
               <span>Согласен на обработку персоанальных данных</span>
             </label>
           </p>
-          <button class="btn waves-effect waves-light consult modal-trigger" type="submit" href="#modal1" name="action">ЗАПИСАТЬСЯ
+          <button class="btn waves-effect waves-light consult modal-trigger wow pulse" type="submit" href="#modal1" name="action">ЗАПИСАТЬСЯ
             НА БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ
             <i class="material-icons right">send</i></button>
         </form>
@@ -107,8 +115,8 @@
 <div class="bb">
   <div class="container">
     <div class="section">
-      <h3 class="indent_title center-align">КАК МЫ РАБОТАЕМ</h3>
-      <div class="row">
+      <h3 class="indent_title center-align wow fadeInLeft">КАК МЫ РАБОТАЕМ</h3>
+      <div class="row wow fadeInUp">
         <div class="col s12 l3 center-align">
           <img class="p_size" src="static/img/free con.png">
         </div>
@@ -116,7 +124,7 @@
           <h5>Бесплатная консультация с анализом всей ситуации и документов</h5>
         </div>
       </div>
-      <div class="row">
+      <div class="row wow fadeInUp">
         <div class="col s12 l3 center-align ">
           <img class="p_size" src="static/img/plan.png">
         </div>
@@ -125,7 +133,7 @@
         </div>
       </div>
      
-      <div class="row">
+      <div class="row wow fadeInUp">
         <div class="col s12 l3 center-align">
           <img class="p_size" src="static/img/doctor.png">
         </div>
@@ -134,8 +142,8 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col s12 l3 center-align">
+      <div class="row wow fadeInUp">
+        <div class="col s12 l3 center-align ">
           <img class="p_size" src="static/img/support.png">
         </div>
         <div class="col s12 l6  black-text">
@@ -143,7 +151,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row wow fadeInUp">
         <div class="col s12 l3 center-align">
           <img class="p_size" src="static/img/pdocument.png">
         </div>
@@ -152,7 +160,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row wow fadeInUp">
         <div class="col s12 l3 center-align">
           <img class="p_size" src="static/img/bilet.png">
         </div>
@@ -190,11 +198,11 @@
  
   <div id="uslugi" class="section">
     <div class="row center-align">
-        <h3 class="black-text indent_title center-align ">Услуги</h3>
+        <h3 class="black-text indent_title center-align wow fadeInLeft">Услуги</h3>
       <div class="col s12 m12 ">
            
-        <div class="col s12  m4 black-text ">             
-            <div class="icon-block z-depth-3 t-block ">
+        <div class="col s12  m4 black-text wow fadeInUp">             
+            <div class="icon-block z-depth-3 t-block " data-title="ЦЕНА: 3200Р">
               <img class="pt_size" src="static/img/t_plan.jpg">
               <h5 class="center">Состовление индивидуального плана</h5>
 
@@ -202,8 +210,8 @@
             </div>
         </div>
 
-          <div class="col s12 m4 black-text">
-            <div class="icon-block z-depth-3 t-block ">
+          <div class="col s12 m4 black-text wow fadeInUp">
+            <div class="icon-block z-depth-3 t-block " data-title="БЕСПЛАТНО">
               <img class="pt_size" src="static/img/t_consult.jpg">
               <h5 class="center">Бесплатная консультация</h5>
               
@@ -212,16 +220,16 @@
           </div>
 
           
-          <div class="col s12 m4 black-text">
-            <div class="icon-block z-depth-3 t-block">
+          <div class="col s12 m4 black-text wow fadeInUp">
+            <div class="icon-block z-depth-3 t-block" data-title="ЦЕНА: от 10 000Р">
               <img class="pt_size" src="static/img/t_yourid.jpg">
               <h5 class="center">Юридическое сопровождение</h5>
               
               <p class="light">Данный пакет услуг для тех, кому требуется помощь в юридической области. Сбор и подготовка документов. Юридические консультации и сопровождение. Обжалование решения призывной комиссии (составление искового заявления, представление интересов в суде и т.д . )</p>
             </div>       
           </div>
-          <div class="col s12  m4 black-text ">             
-              <div class="icon-block z-depth-3 t-block ">
+          <div class="col s12  m4 black-text wow fadeInUp">             
+              <div class="icon-block z-depth-3 t-block "data-title="ЦЕНА: 55 000Р">
                 <img class="pt_size" src="static/img/t_povestka.jpg">
                 <h5 class="center">Повестка на отправку</h5>
   
@@ -229,8 +237,8 @@
               </div>
             </div>
   
-            <div class="col s12 m4 black-text">
-              <div class="icon-block z-depth-3 t-block ">
+            <div class="col s12 m4 black-text wow fadeInUp">
+              <div class="icon-block z-depth-3 t-block  "data-title="ЦЕНА: 15 000Р">
                 <img class="pt_size" src="static/img/t_otsroc.jpg">
                 <h5 class="center">Отсрочка на один призыв</h5>
                 
@@ -239,8 +247,8 @@
             </div>
   
             
-            <div class="col s12 m4 black-text">
-              <div class="icon-block z-depth-3 t-block">
+            <div class="col s12 m4 black-text wow fadeInUp">
+              <div class="icon-block z-depth-3 t-block" data-title="ЦЕНА: 30 000Р">
                 <img class="pt_size" src="static/img/t_uprashen.jpg">
                 <h5 class="center">Пакет "упрощенныый"</h5>
                 
@@ -248,8 +256,8 @@
               </div>
               </div>
 
-              <div class="col s12  m4 black-text ">             
-                  <div class="icon-block z-depth-3 t-block ">
+              <div class="col s12  m4 black-text wow fadeInUp">             
+                  <div class="icon-block z-depth-3 t-block "data-title="ЦЕНА: 45 000Р">
                     <img class="pt_size" src="static/img/t_prodvinut.jpg">
                     <h5 class="center">Пакет "Продвинутый"</h5>
       
@@ -258,8 +266,8 @@
                   </div>
                 </div>
       
-                <div class="col s12 m4 black-text">
-                  <div class="icon-block z-depth-3 t-block ">
+                <div class="col s12 m4 black-text wow fadeInUp">
+                  <div class="icon-block z-depth-3 t-block "data-title="ЦЕНА: 7 500Р">
                     <img class="pt_size" src="static/img/t_vb27.jpg">
                     <h5 class="center">Военный билет после 27-ми лет</h5>
                     
@@ -268,8 +276,8 @@
                 </div>
       
                 
-                <div class="col s12 m4 black-text">
-                  <div class="icon-block z-depth-3 t-block">
+                <div class="col s12 m4 black-text wow fadeInUp">
+                  <div class="icon-block z-depth-3 t-block" data-title="ЦЕНА:от 10 000Р">
                     <img class="pt_size" src="static/img/t_voen.jpg">
                     <h5 class="center">Помощь военнослужащим</h5>
                     
@@ -282,12 +290,12 @@
       </div>
   </div>
   </div>
-  <h3 class="black-text indent_title center-align ">ПОЧЕМУ НАМ ДОВЕРЯЮТ БОЛЬШЕ, ЧЕМ ДРУГИМ</h3>
+  <h3 class="black-text indent_title center-align wow rubberBand">ПОЧЕМУ НАМ ДОВЕРЯЮТ БОЛЬШЕ, ЧЕМ ДРУГИМ</h3>
   <div class="row center-align b_nar ">
       
-    <div class="col s12 m12 ">
+    <div class="col s12 m12 wow ">
          
-      <div class="col s12  m4 black-text ">             
+      <div class="col s12  m4 black-text wow fadeInLeft">             
           <div class="icon-block z-depth-3 d-block ">
             <img class="pd_size" src="static/img/d_zakon.png">
             <h5 class="center">Работаем в рамках закона</h5>
@@ -296,7 +304,7 @@
           </div>
       </div>
 
-        <div class="col s12 m4 black-text">
+        <div class="col s12 m4 black-text wow fadeInUp">
           <div class="icon-block z-depth-3 d-block ">
             <img class="pd_size" src="static/img/d_dogovor.png">
             <h5 class="center">Официальный договор</h5>
@@ -306,15 +314,15 @@
         </div>
 
         
-        <div class="col s12 m4 black-text">
+        <div class="col s12 m4 black-text wow fadeInRight">
           <div class="icon-block z-depth-3 d-block">
             <img class="pd_size" src="static/img/d_rasrochka.png">
             <h5 class="center">Рассрочка 0% или оплата 50/50</h5>
             
-            <p class="light">Вы можете оформить рассрочку без переплат сроком до 6 месяцев или заплатить половину суммы при оформлении договора, а вторую часть после достижения результата.</p>
+            <p class="light">Вы можете оформить рассрочку без переплат сроком до 3-х месяцев или заплатить половину суммы при оформлении договора, а вторую часть после достижения результата.</p>
           </div>       
         </div>
-        <div class="col s12  m4 black-text ">             
+        <div class="col s12  m4 black-text wow fadeInLeft">             
             <div class="icon-block z-depth-3 d-block ">
               <img class="pd_size" src="static/img/d_sila.png">
               <h5 class="center">Силой не заберут!</h5>
@@ -323,7 +331,7 @@
             </div>
           </div>
 
-          <div class="col s12 m4 black-text">
+          <div class="col s12 m4 black-text wow fadeInUp">
             <div class="icon-block z-depth-3 d-block ">
               <img class="pd_size" src="static/img/d_zashita.png">
               <h5 class="center">Защита в суде</h5>
@@ -333,12 +341,12 @@
           </div>
 
           
-          <div class="col s12 m4 black-text">
+          <div class="col s12 m4 black-text wow fadeInRight">
             <div class="icon-block z-depth-3 d-block">
               <img class="pd_size" src="static/img/d_profesional.png">
               <h5 class="center">Профессионализм</h5>
               
-              <p class="light">Членами нашей коллегии являются адвокаты, имеющие высшее медицинское образование. Это дает профессиональное понимание призывных мероприятий как с юридической, так и с медицинской точки зрения.</p>
+              <p class="light">Членами нашей коллегии являются юристы, имеющие высшее медицинское образование. Это дает профессиональное понимание призывных мероприятий как с юридической, так и с медицинской точки зрения.</p>
             </div>
             </div>
     </div>
@@ -350,27 +358,27 @@
 
 
     </div>
-  </div><h3 class="black-text indent_title center-align ">ТИПИЧНЫЕ НАРУШЕНИЯ, КОТОРЫЕ МЫ НЕ ДОПУСТИМ</h3>
+  </div><h3 class="red-text indent_title center-align wow bounceIn">ТИПИЧНЫЕ НАРУШЕНИЯ, КОТОРЫЕ МЫ НЕ ДОПУСТИМ</h3>
   <div class="row ">
       
     <div class="col s12 m8 errors z-depth-3 offset-m2 black-text ">
-      <div class="col s12 m6 black-text ">
-        <p ><i class="small material-icons">priority_high</i>Признание годным к военной службе при наличии непризывного диагноза</p>
+      <div class="col s12 m6 black-text wow fadeInUp">
+        <p ><img class=" img_hight" src="static/img/icons/priority_hight.png">Признание годным к военной службе при наличии непризывного диагноза</p>
       </div>
-      <div class="col s12 m6 black-text">
-        <p ><i class="small material-icons">priority_high</i>Игнорирование жалоб на здоровье, поверхностный осмотр призывника, утеря медицинских документов</p>
+      <div class="col s12 m6 black-text wow fadeInUp">
+        <p ><img class=" img_hight" src="static/img/icons/priority_hight.png">Игнорирование жалоб на здоровье, поверхностный осмотр призывника, утеря медицинских документов</p>
       </div>
-      <div class="col s12 m6 black-text">
-        <p ><i class="small material-icons">priority_high</i>Изменение ранее установленного диагноза при обследовании по направлению военного комиссариата</p>
+      <div class="col s12 m6 black-text wow fadeInUp">
+        <p ><img class=" img_hight" src="static/img/icons/priority_hight.png">Изменение ранее установленного диагноза при обследовании по направлению военного комиссариата</p>
       </div>
-      <div class="col s12 m6 black-text">
-        <p class=" "><i class="small material-icons">priority_high</i>Отказ в предоставлении отсрочки от призыва на военную службу</p>
+      <div class="col s12 m6 black-text wow fadeInUp">
+        <p><img class=" img_hight" src="static/img/icons/priority_hight.png">Отказ в предоставлении отсрочки от призыва на военную службу</p>
       </div>
     </div>
   </div>
     <div class="row center-align ">
-        <h3 class="black-text indent_title center-align ">ВОПРОСЫ И ОТВЕТЫ</h3>
-      <div class="col s12 m8 offset-m2 black-text ">
+        <h3 class="black-text indent_title center-align wow fadeInLeft">ВОПРОСЫ И ОТВЕТЫ</h3>
+      <div class="col s12 m8 offset-m2 black-text wow fadeInUp">
         <ul class="collapsible" data-collapsible="accordion">
             <li>
               <div class="collapsible-header"><i class="material-icons">expand_more</i>Какие гарантии, что я получу военный билет?</div>
@@ -432,7 +440,7 @@
 </div>
  
   <div id="contact"></div>
-  <footer class="page-footer b_add">
+  <footer class="page-footer b_add wow fadeInUpBig">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -452,9 +460,9 @@
         <div class="col l3 s12">
           <h5 class="white-text">Связаться с нами</h5>
           <ul>
-            <li><img class="material" src="static/img/icons/vk.png"> </img><a class="white-text" href="https://vk.com/prizivnik_75">VK</a></li>
-            <li><img class="material" src="static/img/icons/instagram.png"> <a class="white-text" href="https://www.instagram.com/prizivnik75/">INSTAGRAM</a></li>
-            <li><img class="material" src="static/img/icons/phone.png"><img class="material" src="static/img/icons/whatsapp.png">  <img class="material" src="static/img/icons/viber.png"> <a class="white-text" href="#!">+7914-355-80-91</a></li>
+            <li><img class="ps_icon" src="static/img/icons/vk.png"> </img><a class="white-text" href="https://vk.com/prizivnik_75">VK</a></li>
+            <li><img class="ps_icon" src="static/img/icons/instagram.png"> <a class="white-text" href="https://www.instagram.com/prizivnik75/">INSTAGRAM</a></li>
+            <li><img class="material" src="static/img/icons/phone.png"><img class="ps_icon" src="static/img/icons/whatsapp.png">  <img class="ps_icon" src="static/img/icons/viber.png"> <a class="white-text" href="#!">+7914-355-80-91</a></li>
             <li><img class="material" src="static/img/icons/location.png"> <a class="white-text" href="#!">г.Чита улица Чкалова, 135 офис 201</a></li>
           </ul>
           <p class="z-depth-5">
@@ -474,19 +482,20 @@
 
   <!-- Модал  -->
   <div id="modal1" class="modal">
-    <div class="modal-content">
-      <div class="row">
-        <form class="col s12 m8">
+    <div class="modal-content ">
+      <div class="row center-align">
+        <form class="col s12 m12 ">
           <div class="row">
-
-            <div class="input-field col s12 ">
+            <div class="col s5"><img class="logo_modal" src="static/img/logo.png"></div>
+            <h3 class="col m5 center-align">Есть вопросы <br> по призыву?</h3>
+            <div class="input-field col s12 m5 ">
               <i class="material-icons prefix">account_circle</i>
               <input type="text" class="validate" placeholder="имя" id="first_name">
               <label for="first_name">Как вас зовут?</label>
             </div>
 
 
-            <div class="input-field col s12">
+            <div class="input-field col s12 m5">
               <i class="material-icons prefix">phone</i>
               <input  id="online_phone" type="tel" maxlength="50" class="validate" autofocus="autofocus" required="required"
               pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
@@ -495,8 +504,8 @@
               
             </div>
           </div>
-          <div class="row">
-            <div class="input-field col s12">
+          
+            <div class="input-field col s12 m10">
               <textarea id="textarea1" class="materialize-textarea"></textarea>
           <label for="textarea1">Сообщение</label>
             </div>
@@ -508,7 +517,7 @@
               <span>Согласен на обработку персоанальных данных</span>
             </label>
           </p>
-          <button class="btn waves-effect waves-light consult modal-trigger" type="submit" href="#modal1" name="action">ЗАПИСАТЬСЯ
+          <button class="btn waves-effect waves-light consult modal-trigger wow pulse center-align " type="submit" href="#modal1" name="action">ЗАПИСАТЬСЯ НА БЕСПЛАТНО КОНСУЛЬТАЦИЮ
             <i class="material-icons right">send</i>
         </form>
       </div>
@@ -565,7 +574,7 @@
         etShadow: " 0px 0px 0px 0px #333333",
         etLastUnit: 4,
         etNumberFontFamily: "Impact",
-        etNumberSize: 25,
+        etNumberSize: 32,
         etNumberColor: "red",
         etNumberPaddingTB: 0,
         etNumberPaddingLR: 6,

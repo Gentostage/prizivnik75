@@ -5,17 +5,22 @@
  *
  * Made By MaterializeCSS.com
  */
+ /*плавная загрузка страниц*/
 
  @font-face {
   font-family:Glasten; /* Имя шрифта */
-  src: src(../fonts/Glasten.ttf); /* Путь к файлу со шрифтом */
+  src: src(./fonts/Glasten.ttf); /* Путь к файлу со шрифтом */
  }
- 
+
+ .logo_modal{
+   width: 110%;
+   margin-left: -30px;
+ }
  .input-field>label {
    color:#ffff !important;
  }
 .modal{
-  background-color: #464646;
+  background-color: #5e5d5dfb;
 }
 .h_phone
 {
@@ -41,9 +46,32 @@ nav .brand-logo {
   margin-top: 50px;
   margin-left: 50px;
   margin-right: 50px;
-
+  display: inline-block; /* Строчно-блочный элемент */
+  position: relative;
   background-color:white;
+  
 }
+ .t-block:hover{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+ }
+.t-block:hover::after {
+  
+    
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0; bottom: 5px; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background:rgba(55, 129, 214, 0.6); /* Полупрозрачный цвет фона */
+    color: #fff; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 25px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+
+   }
+
 .bb{
   background-color:rgba(100, 100, 100, 0.08);
 }
@@ -60,6 +88,18 @@ nav .brand-logo {
   background-color:rgba(55, 129, 214, 0.8)!important;
  
 }
+.modal_img{
+  background: url(../img/i_modal.jpg) center;
+  
+} 
+.pulimer{
+  margin-right: -4%;
+}
+.ps_icon{
+  width: 22px;
+  padding-top: 6px;
+  margin-left: 3px;
+}
 .d-block{
   height: 380px;
   /* width: 80%; */
@@ -69,9 +109,8 @@ nav .brand-logo {
   background-color:white;
   
 }
-.col{
-  color: important;
-}
+
+
 .b_add{
 
   background-color:rgba(55, 129, 214, 0.8) !important;
@@ -92,6 +131,10 @@ nav .brand-logo {
 }
 .radius{
   border-radius: 100px;
+}
+.img_hight{
+  margin-left: 8px;
+  margin-right: 8px;
 }
 .rewiews
 {
