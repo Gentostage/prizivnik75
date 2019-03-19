@@ -26,7 +26,7 @@ setTimeout(function f() {
   console.log("modal")
 
   instance.open()
-},10000)
+},60000)
 
 
 //плавная анимация 

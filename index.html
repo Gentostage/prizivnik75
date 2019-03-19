@@ -81,7 +81,7 @@
           <h5>Успей записаться на бесплатную консультацию!</h5>
         </div>
       <div class=" col s12 m12 center-align b_add">
-        <form class="col s12 m6  center-align offset-m3">
+        <form class="col s12 m6  center-align offset-m3" method="post" action="mail">
           <div class="col s12 ">
             <div class="input-field col s12 l6">
               <i class="material-icons prefix">account_circle</i>
@@ -102,7 +102,7 @@
               <span>Согласен на обработку персоанальных данных</span>
             </label>
           </p>
-          <button class="btn waves-effect waves-light consult modal-trigger wow pulse" type="submit" href="#modal1" name="action">ЗАПИСАТЬСЯ
+          <button class="btn waves-effect waves-light consult modal-trigger wow pulse" type="submit"  name="action">ЗАПИСАТЬСЯ
             НА БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ
             <i class="material-icons right">send</i></button>
         </form>
@@ -481,48 +481,58 @@
   <!-- Модал  -->
   <div id="modal1" class="modal">
     <div class="modal-content ">
-      <div class="col m12 right"><a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class=" right-align white-text material-icons ">close</i></a></div>
-      <div class="row center-align">
-        <form class="col s12 m12 ">
+
+      <div class="col m12 right">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class=" right-align white-text material-icons ">close</i></a>
+      </div>
+      <form class="col s12 m12 " action="mail" method="post">
+        <div class="row center-align">
+
           <div class="row">
-            <div class="col s5 "><img class="logo_modal" src="static/img/logo.png"></div>
-            <h3 class="col m5 center-align">Есть вопросы <br> по призыву?</h3>
-            <div class="input-field col s12 m5 ">
+
+            <div class="col s6 m6">
+              <img class="logo_modal" src="static/img/logo.png">
+            </div>
+
+            <h3 class="col m6 center-align">Есть вопросы <br> по призыву?</h3>
+            <div class="input-field col s12 m6 ">
               <i class="material-icons prefix">account_circle</i>
               <input type="text" class="validate" placeholder="имя" id="first_name">
               <label for="first_name">Как вас зовут?</label>
             </div>
 
 
-            <div class="input-field col s12 m5">
+            <div class="input-field col s12 m6">
               <i class="material-icons prefix">phone</i>
               <input  id="online_phone" type="tel" maxlength="50" class="validate" autofocus="autofocus" required="required"
               pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
               placeholder="+7(___)___-__-__">
               <label for="telephone">Номер телефона</label>
-              
             </div>
+
           </div>
           
-            <div class="input-field col s12 m10">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Сообщение</label>
-            </div>
+              <div class="input-field col s12 m12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Сообщение</label>
+              </div>
+
+
+          <div class="col m12 center-align">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Согласен на обработку персоанальных данных</span>
+              </label>
+            </p>
+            <button class="btn waves-effect waves-light consult modal-trigger wow pulse center-align " type="submit" name="action">ЗАПИСАТЬСЯ НА БЕСПЛАТНО КОНСУЛЬТАЦИЮ</button>
           </div>
 
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span>Согласен на обработку персоанальных данных</span>
-            </label>
-          </p>
-         
-          <button class="btn waves-effect waves-light consult modal-trigger wow pulse center-align " type="submit" href="#modal1" name="action">ЗАПИСАТЬСЯ НА БЕСПЛАТНО КОНСУЛЬТАЦИЮ
-          
           </div>
         </form>
       </div>
     </div>
+
   </div>
 
 <!-- Модал конец  -->
