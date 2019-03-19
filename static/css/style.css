@@ -25,7 +25,8 @@
    color:#ffff !important;
  }
 .modal{
-  background-color: #5e5d5dfb;
+  background-color:rgba(255, 255, 255, 0.9);
+  color: black;
 }
 .h_phone
 {
@@ -79,6 +80,7 @@ nav .brand-logo {
 
 .bb{
   background-color:rgba(100, 100, 100, 0.08);
+  margin-bottom: -20px;
 }
 .errors{
   border-top: 4px solid red;
@@ -91,6 +93,7 @@ nav .brand-logo {
 .b_nar{
   
   background-color:rgba(55, 129, 214, 0.8)!important;
+  box-shadow: 0 0 90px rgba(55, 129, 214, 0.5); 
  
 }
 .pulimer{
@@ -117,6 +120,7 @@ nav .brand-logo {
   background-color:rgba(55, 129, 214, 0.8) !important;
   margin-bottom: -20px;
   color: black;
+  box-shadow: 0 0 90px rgba(55, 129, 214, 0.5); 
   
 }
 .h_font{
