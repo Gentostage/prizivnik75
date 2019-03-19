@@ -39,16 +39,14 @@
             </div>
           </ul>
 
-          <ul id="nav-mobile" class="sidenav">
-            <div class="white-text">
-
+          <ul id="nav-mobile" class="sidenav"> 
               <li><a href="#rewiews">ОТЗЫВЫ</a></li>
               <li><a href="#uslugi">УСЛУГИ</a></li>
               <li><a href="#">СИСОК БОЛЕЗНЕЙ</a></li>
               <li><a href="#contact">КОНТАКТЫ</a></li>
               
               <li><a href="#"><p class="u_icon">+7914-355-80-91</p></a></li>
-            </div>
+            
           </ul>
           <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
@@ -488,7 +486,7 @@
 
   <!-- Модал  -->
   <div id="modal1" class="modal">
-    <div class="modal-content ">
+    <div class="modal-content black-text">
 
       <div class="col m12 right">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class=" right-align white-text material-icons ">close</i></a>
@@ -607,6 +605,16 @@
     });
   </script>
     <script>
+  
+  $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 300
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true, // Choose whether you can drag to open on touch screens,
+      onOpen: function(el) { /* Do Stuff* / }, // A function to be called when sideNav is opened
+      onClose: function(el) { /* Do Stuff* / }, // A function to be called when sideNav is closed
+    }
+  );
         wow = new WOW(
                           {
                           boxClass:     'wow',      // default
