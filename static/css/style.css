@@ -252,6 +252,9 @@ img.product {
   }
 
 @media only screen and (max-width : 992px) {
+    .consult{
+        font-size: 12px;
+    }
   .parallax-container .section {
     position: absolute;
     top: 40%;

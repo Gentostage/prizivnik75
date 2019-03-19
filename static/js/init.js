@@ -20,13 +20,14 @@
 
 // Модальное окно через 10 секунд 
 var Modalelem = document.querySelector('.modal');
-var instance = M.Modal.init(Modalelem);
+var instance = M.Modal.init(Modalelem)
 
-setTimeout(function f() {
-  console.log("modal")
-
-  instance.open()
-},60000)
+if($(window).width() >= 992){
+    setTimeout(function f() {
+        console.log("modal")
+        instance.open()
+    },60)
+};
 
 
 //плавная анимация 
@@ -44,10 +45,10 @@ $(document).ready(function(){
   //Верстка при подборе экрана 
 
 $(document).ready(function(){
-  if($(window).width() <= 768){
+  if($(window).width() <= 992){
     $('#lb_timer').removeClass('left-align');
   };
-  if($(window).width() >= 768){
+  if($(window).width() >= 992){
     $('#lb_timer').addClass('left-align');
   };
 });
