@@ -26,7 +26,7 @@ if($(window).width() >= 992){
     setTimeout(function f() {
         console.log("modal")
         instance.open()
-    },60)
+    },60000)
 };
 
 

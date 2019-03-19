@@ -8,8 +8,8 @@
  /*плавная загрузка страниц*/
 
  @font-face {
-  font-family:Glasten; /* Имя шрифта */
-  src: src(./fonts/Glasten.ttf); /* Путь к файлу со шрифтом */
+  font-family: Glasten; /* Имя шрифта */
+  src: url("../fonts/Glasten.ttf"); /* Путь к файлу со шрифтом */
  }
 
  .logo_modal{
@@ -115,7 +115,7 @@ nav .brand-logo {
   
 }
 .h_font{
-  font-family:Glasten;
+  font-family: Glasten;
   
 }
 .b_head{
