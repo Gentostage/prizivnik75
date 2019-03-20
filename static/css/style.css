@@ -15,9 +15,22 @@
 	font-weight: normal;
 	font-style: normal;
 }
+.bor_text{
+  border-bottom: 1px solid white;
+}
 
-.sidenav-overlay{
-  background-color: rgba(255, 251, 251, 0.08);
+.number { 
+  list-style-type: decimal !important;
+  font-size: 20px;
+}
+.red_line{
+  text-indent: 20px!important;
+  font-size: 18px;
+}
+.disk { 
+  list-style-type: disc !important;
+  font-size: 18px;
+  text-indent: 20px!important;
 }
  .logo_modal{
    width: 110%;
@@ -49,7 +62,7 @@ nav .brand-logo {
   color: #fff;
 }
 .t-block{
-  height: 650px;
+  height: 680px;
   /* width: 80%; */
   margin-top: 50px;
   margin-left: 50px;
@@ -96,7 +109,7 @@ nav .brand-logo {
   
   background-color:rgba(55, 129, 214, 0.8)!important;
   box-shadow: 0 0 90px rgba(55, 129, 214, 0.5); 
- 
+  padding-bottom: 20px;
 }
 .pulimer{
   margin-right: -4%;
@@ -107,7 +120,7 @@ nav .brand-logo {
   margin-left: 3px;
 }
 .d-block{
-  height: 380px;
+  height: 390px;
   /* width: 80%; */
   margin-top: 50px;
   margin-left: 50px;
@@ -142,6 +155,10 @@ nav .brand-logo {
 .img_hight{
   margin-left: 8px;
   margin-right: 8px;
+  width: 8px;
+}
+.font_nar{
+  font-size: 28px;
 }
 .rewiews
 {
