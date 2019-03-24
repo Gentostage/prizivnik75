@@ -1,0 +1,310 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+ /*плавная загрузка страниц*/
+
+
+@font-face {
+	font-family: 'Glasten';
+	src: url('../fonts/Glasten.eot');
+	src: url('../fonts/Glasten.woff') format('woff'), url('../fonts/Glasten.ttf') format('truetype'), url('../fonts/Glasten.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.bor_text{
+  border-bottom: 1px solid white;
+}
+
+.number { 
+  list-style-type: decimal !important;
+  font-size: 20px;
+}
+.red_line{
+  text-indent: 20px!important;
+  font-size: 18px;
+}
+.disk { 
+  list-style-type: disc !important;
+  font-size: 18px;
+  text-indent: 20px!important;
+}
+ .logo_modal{
+   width: 110%;
+   margin-left: -30px;
+ }
+ .input-field>label {
+   color:#ffff !important;
+ }
+.modal{
+  background-color:rgb(170, 170, 170);
+  color: black;
+}
+.h_phone
+{
+  width: 200px;
+  
+}
+
+label {
+    font-size: .8rem;
+    color: #ffffff;
+}
+[type="checkbox"]+span:not(.lever):before, [type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+ 
+  border: 2px solid #fff;
+ }
+nav ul a,
+nav .brand-logo {
+  color: #fff;
+}
+.t-block{
+  height: 680px;
+  /* width: 80%; */
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: inline-block; /* Строчно-блочный элемент */
+  position: relative;
+  background-color:white;
+  
+}
+ .t-block:hover{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+ }
+.t-block:hover::after {
+  
+    
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0; bottom: 5px; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background:rgba(55, 129, 214, 0.6); /* Полупрозрачный цвет фона */
+    color: #fff; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 25px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+
+   }
+
+.bb{
+  background-color:rgba(100, 100, 100, 0.08);
+  margin-bottom: -20px;
+}
+.errors{
+  border-top: 4px solid red;
+  border-bottom: 4px solid red;
+  font-size: 16pt;
+}
+.err_b{
+  border: 4px solid rgba(252, 0, 0, 0.692);
+}
+.b_nar{
+  
+  background-color:rgba(55, 129, 214, 0.8)!important;
+  box-shadow: 0 0 90px rgba(55, 129, 214, 0.5); 
+  padding-bottom: 20px;
+}
+.pulimer{
+  margin-right: -4%;
+}
+.ps_icon{
+  width: 22px;
+  padding-top: 6px;
+  margin-left: 3px;
+}
+.d-block{
+  height: 390px;
+  /* width: 80%; */
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color:white;
+  
+}
+
+
+.b_add{
+
+  background-color:rgba(55, 129, 214, 0.8) !important;
+  margin-bottom: -20px;
+  color: black;
+  box-shadow: 0 0 90px rgba(55, 129, 214, 0.5); 
+  
+}
+.h_font{
+  font-family: Glasten;
+  
+}
+.b_head{
+  background-color: rgba(1, 1, 1, 0.4);
+  
+}
+.pup{
+  padding-top:100px;
+}
+.radius{
+  border-radius: 100px;
+}
+.img_hight{
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 8px;
+}
+.font_nar{
+  font-size: 28px;
+}
+.rewiews
+{
+    /*box-shadow: 2px 9px 20px 0px;*/
+    height: 500px;
+    width: 300px;
+    
+}
+.hight_sl{
+  height: 600px;
+  padding: 20px;
+}
+p {
+  line-height: 2rem;
+}
+.indent_title{
+  margin-top: 60px;
+  margin-bottom: 90px;
+}
+.p_size{
+    width: 140PX;
+    margin: 0;
+    overflow: hidden;
+    min-width: 60px;
+
+  }
+
+  .pt_size{
+    width: 75%;
+    margin: 0;
+    overflow: hidden;
+    min-width: 60px;
+
+  }
+  .pd_size{
+    width: 25%;
+    margin: 0;
+    margin-top: 9px;
+    overflow: hidden;
+    min-width: 60px;
+
+  }
+.timer{
+  margin-top: 50px;
+}
+.timer1{
+  margin-top: 100px;
+  margin-bottom: -120px;
+}
+.otstup{
+
+  margin-top: -6.3333333333%;
+}
+.otstup_b{
+
+  margin-bottom: -66.3333333333%;
+}
+
+.timerend{
+
+  margin-top: 10px;
+}
+.minus_text{
+  margin-top: -50px;
+}
+.consult{
+  margin-top: 10px;
+  background-color: red;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.navigation{
+  
+    background-color: rgba(55, 129, 214, 0.8); 
+ 
+    color: white;
+    line-height: 64px;
+    display: block;
+   
+ 
+}
+.niz {
+  border-color: #4f72bb;
+}
+img.logo {
+  
+  width: 40%; 
+  margin: 0;
+  margin-left: -220px;
+  margin-top: 10px;
+  overflow: hidden;
+  min-width: 60px
+ 
+
+}
+img.product {
+  
+  width: 85%; 
+  margin: 0;
+  
+
+  overflow: hidden;
+  min-width: 60px
+ 
+
+}
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 580px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+    .consult{
+        font-size: 12px;
+    }
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
