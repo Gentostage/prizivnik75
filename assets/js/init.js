@@ -46,16 +46,16 @@ function setCursorPosition(pos, e) {
 })
 
 
-// Модальное окно через 10 секунд 
-// var Modalelem = document.querySelector('.modal');
-// var instance = M.Modal.init(Modalelem)
-
-if($(window).width() >= 992){
-    setTimeout(function f() {
-        console.log("modal")
-        instance.open()
-    },60000)
-};
+// // Модальное окно через 10 секунд
+// // var Modalelem = document.querySelector('.modal');
+// // var instance = M.Modal.init(Modalelem)
+//
+// if($(window).width() >= 992){
+//     setTimeout(function f() {
+//         console.log("modal")
+//         instance.open()
+//     },60000)
+// };
 
 
 //плавная анимация 
@@ -73,10 +73,12 @@ $(document).ready(function(){
   //Верстка при подборе экрана 
 
 $(document).ready(function(){
-  if($(window).width() <= 992){
+  if($(window).width() <= 1200){
+    $('#lb_lt').removeClass('right-align');
     $('#lb_timer').removeClass('left-align');
   };
-  if($(window).width() >= 992){
+  if($(window).width() >= 1200){
+    $('#lb_lt').addClass('right-align');
     $('#lb_timer').addClass('left-align');
   };
 });

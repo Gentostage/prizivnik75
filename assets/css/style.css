@@ -60,7 +60,12 @@ label {
 nav ul a,
 nav .brand-logo {
   color: #fff;
+
 }
+#logo-container{
+    margin-left: 125px;
+}
+
 .t-block{
   height: 680px;
   /* width: 80%; */
@@ -112,7 +117,7 @@ nav .brand-logo {
   padding-bottom: 20px;
 }
 .pulimer{
-  margin-right: -4%;
+  padding-left: 20%!important;
 }
 .ps_icon{
   width: 22px;
@@ -279,7 +284,7 @@ img.product {
     width: 100%;
   }
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 1200px) {
     .consult{
         font-size: 12px;
     }
@@ -290,12 +295,20 @@ img.product {
   #index-banner .section {
     top: 10%;
   }
+  #logo-container{
+    margin-left: 0px;
+    }
+
+
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
   }
+    .pulimer{
+    padding-left: 0!important;
+}
 }
 
 .icon-block {
@@ -307,4 +320,7 @@ img.product {
 
 footer.page-footer {
   margin: 0;
+}
+.sidenav-overlay {
+    z-index: 996;
 }
