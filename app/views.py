@@ -8,6 +8,9 @@ def index(request):
 def politika(request):
     return render(request, 'app/politika.html')
 
+def polzovatel(request):
+    return render(request, 'app/polzovatel.html')
+
 def mail(request):
     if request.method == 'POST':
         name = request.POST.get('name')

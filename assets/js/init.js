@@ -71,7 +71,6 @@ $(document).ready(function(){
 });
 
   //Верстка при подборе экрана 
-
 $(document).ready(function(){
   if($(window).width() <= 1200){
     $('#lb_lt').removeClass('right-align');
@@ -86,10 +85,12 @@ $(document).ready(function(){
 
 // Удалить класс при изменение разрешения 
 $(window).resize(function () {
-  if($(window).width() <= 768){
+  if($(window).width() <= 1200){
+    $('#lb_lt').removeClass('right-align');
     $('#lb_timer').removeClass('left-align');
   };
-  if($(window).width() >= 768){
+  if($(window).width() >= 1200){
+    $('#lb_lt').addClass('right-align');
     $('#lb_timer').addClass('left-align');
   };
 })
