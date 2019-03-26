@@ -107,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.timeweb.ru'
 EMAIL_USE_TLS = True
-EMAIL_PORT = 25
+EMAIL_PORT = 2525
 EMAIL_HOST_USER = "service@prizivnik75.tw1.ru"
 EMAIL_HOST_PASSWORD = 'E835Pr1z'
 
@@ -128,5 +128,6 @@ USE_TZ = True
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "assets"),
 )
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, '../static')
+
 STATIC_URL = '/static/'

@@ -19,6 +19,12 @@
   border-bottom: 1px solid white;
 }
 
+.success{
+    background: #00C853;
+}
+.errors{
+    background: #ff211c;
+}
 .number { 
   list-style-type: decimal !important;
   font-size: 20px;
