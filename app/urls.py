@@ -8,5 +8,4 @@ urlpatterns = [
     path('mail', views.mail, name='mail'),
     path('polzovatel', views.polzovatel, name='polzovatel'),
 
-
 ]

@@ -2,11 +2,23 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 
+from .models import *
+
 from prizivnik75 import settings
 
 
 def index(request):
-    return render(request, 'app/index.html')
+    work = Howword.objects.all()
+    trust = Trust.objects.all()
+    content = Content.objects.all()
+    work = Howword.objects.all()
+
+    context={
+        "work": work,
+        "trust": trust,
+        "content": content,
+    }
+    return render(request, 'app/index.html',context)
 
 
 def politika(request):

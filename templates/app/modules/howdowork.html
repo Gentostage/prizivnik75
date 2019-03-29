@@ -2,14 +2,16 @@
     <div class="container">
         <div class="section">
             <h3 class="indent_title center-align ">КАК МЫ РАБОТАЕМ</h3>
+            {%  for w in work %}
             <div class="row wow fadeInUp">
                 <div class="col s12 l3 center-align">
-                    <img class="p_size" src="static/img/free con.png">
+                    <img class="p_size" src="{{ w.picture.url }}">
                 </div>
                 <div class="col s12 l6 black-text">
-                    <h5>Бесплатная консультация с анализом всей ситуации и документов</h5>
+                    <h5>{{ w.text }}</h5>
                 </div>
             </div>
+            {% endfor %}
             <div class="row wow fadeInUp">
                 <div class="col s12 l3 center-align ">
                     <img class="p_size" src="static/img/plan.png">
