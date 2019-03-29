@@ -13,7 +13,8 @@ class Howword(models.Model):
         return self.text
 
 class Trust(models.Model):
-    text = models.CharField(max_length=100)
+    titel = models.CharField(max_length=100)
+    text = models.CharField(max_length=250)
     picture = models.ImageField(upload_to='img/', height_field=None, width_field=None, max_length=100)
 
     class Meta:

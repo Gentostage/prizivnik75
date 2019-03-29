@@ -1,63 +1,71 @@
-  <div id="plus" class="row center-align b_nar ">
+<div id="plus" class="row center-align b_nar ">
     <div class="col s12 m12 wow ">
-    <h3 class="black-text indent_title center-align wow fadeInLeft">ПОЧЕМУ НАМ ДОВЕРЯЮТ БОЛЬШЕ, ЧЕМ ДРУГИМ</h3>
-      <div class="col s12  m4 black-text wow fadeInUp">
-          <div class="icon-block z-depth-3 d-block ">
-            <img class="pd_size" src="static/img/d_zakon.png">
-            <h5 class="center">Работаем в рамках закона</h5>
+        <h3 class="black-text indent_title center-align wow fadeInLeft">ПОЧЕМУ НАМ ДОВЕРЯЮТ БОЛЬШЕ, ЧЕМ ДРУГИМ</h3>
 
-            <p class="light">Мы не выдаем военные билеты, не занимаемся подделкой медицинских  документов, не участвуем в коррупционных схемах. Заключая договор с нами, вы будете в полной юридической безопасности.
-            </p>
-          </div>
-      </div>
+        {% for trust in trust %}
+            <div class="col s12  m4 black-text wow fadeInUp">
+                <div class="icon-block z-depth-3 d-block ">
+                    <img class="pd_size" src="{{ trust.picture.url }}">
+                    <h5 class="center">{{ trust.titel }}</h5>
+
+                    <p class="light">
+                        {{ trust.text }}
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
 
         <div class="col s12 m4 black-text wow fadeInUp">
-          <div class="icon-block z-depth-3 d-block ">
-            <img class="pd_size" src="static/img/d_dogovor.png">
-            <h5 class="center">Официальный договор</h5>
+            <div class="icon-block z-depth-3 d-block ">
+                <img class="pd_size" src="static/img/d_dogovor.png">
+                <h5 class="center">Официальный договор</h5>
 
-            <p class="light">В договоре четко прописаны все наши обязательства и итоговый результат, до которого мы работаем.</p>
-          </div>
+                <p class="light">В договоре четко прописаны все наши обязательства и итоговый результат, до которого мы
+                    работаем.</p>
+            </div>
         </div>
 
 
         <div class="col s12 m4 black-text wow fadeInUp">
-          <div class="icon-block z-depth-3 d-block">
-            <img class="pd_size" src="static/img/d_rasrochka.png">
-            <h5 class="center">Рассрочка 0%</h5>
+            <div class="icon-block z-depth-3 d-block">
+                <img class="pd_size" src="static/img/d_rasrochka.png">
+                <h5 class="center">Рассрочка 0%</h5>
 
-            <p class="light">Вы можете оформить рассрочку без переплат сроком до 3-х месяцев
-            </p>
-          </div>
+                <p class="light">Вы можете оформить рассрочку без переплат сроком до 3-х месяцев
+                </p>
+            </div>
         </div>
         <div class="col s12  m4 black-text wow fadeInUp">
             <div class="icon-block z-depth-3 d-block ">
-              <img class="pd_size" src="static/img/d_sila.png">
-              <h5 class="center">Силой не заберут!</h5>
+                <img class="pd_size" src="static/img/d_sila.png">
+                <h5 class="center">Силой не заберут!</h5>
 
-              <p class="light">Работая с нами, вы можете не бояться насильственного призыва. Мы защитим вас от неправомерных действий сотрудников военкомата.</p>
+                <p class="light">Работая с нами, вы можете не бояться насильственного призыва. Мы защитим вас от
+                    неправомерных действий сотрудников военкомата.</p>
             </div>
-          </div>
+        </div>
 
-          <div class="col s12 m4 black-text wow fadeInUp">
+        <div class="col s12 m4 black-text wow fadeInUp">
             <div class="icon-block z-depth-3 d-block ">
-              <img class="pd_size" src="static/img/d_zashita.png">
-              <h5 class="center">Защита в суде</h5>
+                <img class="pd_size" src="static/img/d_zashita.png">
+                <h5 class="center">Защита в суде</h5>
 
-              <p class="light">В случае принятия решения о призыве в армию, мы обжалуем его в суде и отменим.</p>
+                <p class="light">В случае принятия решения о призыве в армию, мы обжалуем его в суде и отменим.</p>
             </div>
-          </div>
+        </div>
 
 
-          <div class="col s12 m4 black-text wow fadeInUp">
+        <div class="col s12 m4 black-text wow fadeInUp">
             <div class="icon-block z-depth-3 d-block">
-              <img class="pd_size" src="static/img/d_profesional.png">
-              <h5 class="center">Профессионализм</h5>
+                <img class="pd_size" src="static/img/d_profesional.png">
+                <h5 class="center">Профессионализм</h5>
 
-              <p class="light">Членами нашей компании  являются юристы, имеющие высшее медицинское образование. Это дает профессиональное понимание призывных мероприятий как с юридической, так и с медицинской точки зрения.
-              </p>
+                <p class="light">Членами нашей компании являются юристы, имеющие высшее медицинское образование. Это
+                    дает профессиональное понимание призывных мероприятий как с юридической, так и с медицинской точки
+                    зрения.
+                </p>
             </div>
-            </div>
+        </div>
     </div>
 
- </div>
+</div>

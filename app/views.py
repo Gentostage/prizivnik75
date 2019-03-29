@@ -11,12 +11,16 @@ def index(request):
     work = Howword.objects.all()
     trust = Trust.objects.all()
     content = Content.objects.all()
-    work = Howword.objects.all()
-
-    context={
+    voil = Violations.objects.all()
+    faq = FAQ.objects.all()
+    print(voil)
+    context= {
         "work": work,
         "trust": trust,
         "content": content,
+        "voil": voil,
+        "faq":faq,
+
     }
     return render(request, 'app/index.html',context)
 
