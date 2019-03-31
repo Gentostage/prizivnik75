@@ -13,9 +13,9 @@ class Howword(models.Model):
         return self.text
 
 class Trust(models.Model):
-    titel = models.CharField(max_length=100)
-    text = models.CharField(max_length=250)
-    picture = models.ImageField(upload_to='img/', height_field=None, width_field=None, max_length=100)
+    titel = models.CharField(max_length=100, verbose_name=u"Заголовок")
+    text = models.TextField(max_length=250, verbose_name=u"Текст")
+    picture = models.ImageField(upload_to='img/', height_field=None, width_field=None, max_length=100, verbose_name=u"Картинка")
 
     class Meta:
         verbose_name = u"Нам доверяют"
@@ -25,17 +25,19 @@ class Trust(models.Model):
         return self.text
 
 class Content(models.Model):
-    text = models.CharField(max_length=100)
-    picture = models.ImageField(upload_to='img/', height_field=None, width_field=None, max_length=100)
+    title = models.CharField(max_length=100, verbose_name=u"Заголовок")
+    text = models.TextField(max_length=250,verbose_name=u"Текст")
+    picture = models.ImageField(upload_to='img/', height_field=None, width_field=None, max_length=100, verbose_name=u"Картинка")
+    price = models.IntegerField(verbose_name=u"Цена")
     class Meta:
         verbose_name = u"Услуги"
         verbose_name_plural = u"Услуги"
 
     def __str__(self):
-        return self.text
+        return self.title
 
 class Violations(models.Model):
-    text = models.CharField(max_length=100)
+    text = models.TextField(max_length=250)
     class Meta:
         verbose_name = u"Нарушения"
         verbose_name_plural = u"Нарушения"
@@ -44,10 +46,20 @@ class Violations(models.Model):
         return self.text
 
 class FAQ(models.Model):
-    questions = models.CharField(max_length=100)
-    asked = models.CharField(max_length=1000)
+    questions = models.TextField(max_length=100, verbose_name=u"Вопрос")
+    asked = models.TextField(max_length=1000, verbose_name=u"Ответ")
     class Meta:
         verbose_name = u"Вопрос ответ"
         verbose_name_plural = u"Вопрос ответ"
     def __str__(self):
         return self.questions
+
+class Reviews(models.Model):
+    name = models.CharField(max_length=50, verbose_name=u"Имя")
+    review = models.TextField(max_length=1000, verbose_name=u"Отзыв")
+    avatar = models.ImageField(upload_to='img/',height_field=None, width_field=None, max_length=100, verbose_name=u"Аватарка")
+    class Meta:
+        verbose_name = u"Отзывы"
+        verbose_name_plural = u"Отзывы"
+    def __str__(self):
+        return self.name

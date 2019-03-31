@@ -26,16 +26,6 @@ function setCursorPosition(pos, e) {
 }
 
 
-(function($){
-  $(function(){
-
-    $('.sidenav').sidenav();
-    $('.parallax').parallax();
-
-  }); // end of document ready
-})(jQuery);
- // end of jQuery name space
-
  jQuery(document).ready(function () {
   $(".carousel.carousel-slider").carousel({
     fullwidth: true,

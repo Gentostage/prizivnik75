@@ -1,0 +1,23 @@
+<div class=" b_add section ">
+    <h3 class="black-text indent_title center-align wow fadeInLeft">Отзывы</h3>
+    <div class="carousel  carousel-slider hight_sl">
+        <div class="row">
+            {% for review in review %}
+                <a class="carousel-item white-text">
+                    <div class="col s12 m8 offset-m2">
+                        <div class="icon-block">
+                            <h2 class="center brown-text"><i class="material-icons">
+                                <img class="product radius"
+                                     src="{{ review.avatar.url }}"></i>
+                            </h2>
+                            <h5 class="center">{{ review.name }}</h5>
+                            <p class="light">
+                                {{ review.review }}
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

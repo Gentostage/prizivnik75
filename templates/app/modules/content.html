@@ -1,0 +1,26 @@
+<div id="uslugi" class="section">
+    <div class="row center-align">
+        <h3 class="black-text indent_title center-align wow fadeInLeft">Услуги</h3>
+        <div class="col s12 m12 ">
+
+            {% for content in content %}
+                <div class="col s12  m4 black-text wow fadeInUp">
+                    <div class="icon-block z-depth-3 t-block "
+                         data-title="{% if content.price == 0 %} БЕСПЛАТНО{% else %} ЦЕНА: от {{ content.price}}{% endif %}">
+                        <img class="pt_size" src="static/img/t_plan.jpg">
+                        <h5 class="center">{{ content.title }}</h5>
+
+                        <p class="light">
+                            {{ content.text }}
+                        </p>
+                    </div>
+                </div>
+            {% endfor %}
+
+            <div id="doverie" class="section">
+
+
+            </div>
+        </div>
+    </div>
+
