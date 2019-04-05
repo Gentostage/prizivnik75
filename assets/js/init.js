@@ -47,16 +47,15 @@ function setCursorPosition(pos, e) {
 //     },60000)
 // };
 
+//плавная анимация
+$(function(){
+  $('a[href^="#"]').on('click', function(event) {
+    event.preventDefault();
 
-//плавная анимация 
-$(document).ready(function(){
-  $("a[href*=#]").on("click", function(e){
-      var anchor = $(this);
-      $('html, body').stop().animate({
-          scrollTop: $(anchor.attr('href')).offset().top-150
-      }, 777);
-      e.preventDefault();
-      return false;
+    var sc = $(this).attr("href"),
+        dn = $(sc).offset().top;
+    $('html, body').animate({scrollTop: dn}, 700);
+
   });
 });
 
