@@ -63,3 +63,15 @@ class Reviews(models.Model):
         verbose_name_plural = u"Отзывы"
     def __str__(self):
         return self.name
+
+class About(models.Model):
+    us = models.TextField(max_length=1000, verbose_name=u'О Нас')
+    vklink = models.CharField(max_length=50, verbose_name=u'Вконтакте')
+    insta = models.CharField(max_length=50, verbose_name=u'Инстаграмм')
+    number = models.CharField(max_length=50, verbose_name=u'Телефон')
+    strit = models.CharField(max_length=100, verbose_name=u'Адресс')
+    email = models.CharField(max_length=50, verbose_name=u'Почта')
+    class Meta:
+        verbose_name = u"О нас"
+        verbose_name_plural = u"О нас"
+        

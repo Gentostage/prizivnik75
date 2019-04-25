@@ -13,4 +13,6 @@ admin.site.register(Violations)
 
 admin.site.register(Reviews)
 
+admin.site.register(About)
+
 # Register your models here.

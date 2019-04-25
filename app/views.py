@@ -14,13 +14,15 @@ def index(request):
     voil = Violations.objects.all()
     faq = FAQ.objects.all()
     review= Reviews.objects.all()
+    about = About.objects.all()
     context= {
         "work": work,
         "trust": trust,
         "content": content,
         "voil": voil,
         "faq":faq,
-        "review": review
+        "review": review,
+        "about":about
     }
     return render(request, 'app/index.html',context)
 

@@ -1,43 +1,75 @@
-
-  <div id="contact"></div>
-  <footer class="page-footer b_add wow fadeInUpBig">
+<div id="contact"></div>
+<footer class="page-footer b_add wow fadeInUpBig">
     <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">О НАС</h5>
-          <p class="grey-text text-lighten-4 red_line">
-            Компания "Призывник-75" единственная компания региона оказывающая широкий спектр юридических услуг связанных с военной службой.<br><div class="grey-text text-lighten-4 red_line">
-            
-            Мы защищаем права призывников и военнослужащих.Компания начала свою деятельность с 2018 года. Мы помогли многим призывникам отстоять свои права.
-            Компания "Призывник-75" специализируется на решении проблем связанных с несением воинской службы.</div></p>
-            <p class="grey-text text-lighten-4 red_line">
-            Призывник-75-это лучшие юристы в области военного права и ведущие эксперты в медицине.
-            Наша компания ведет сотрудничество с ведущими клиниками города, что является приемуществом при обжаловании или освидетельствовании диагноза.Наша компания всегда рада законно помочь своим клиентам.
-            </p>
-        </div>
-        <div class="col l3 s12">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">О НАС</h5>
+                {% for a in about %}
+                    <p class="grey-text text-lighten-4 red_line">
+                        {{ a.us  | safe  }}
+                    </p>
+                {% endfor %}
+            </div>
+            <div class="col l3 s12">
 
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Связаться с нами</h5>
+                <ul>
+                    {% for a in about %}
+                        <li><a class="white-text" href="{{ a.vklink }}">
+                            <img class="ps_icon" src="static/img/icons/vk.png">
+                            VK</a>
+                        </li>
+                    {% endfor %}
+
+                    {% for a in about %}
+
+                        <li>
+                            <a class="white-text" href="{{ a.insta }}">
+                                <img class="ps_icon" src="static/img/icons/instagram.png">
+                                INSTAGRAM</a>
+                        </li>
+                    {% endfor %}
+
+                    {% for a in about %}
+                        <li><a class="white-text" href="#!">
+                            <img class="material" src="static/img/icons/phone.png">
+                            {{ a.number }}</a>
+                        </li>
+
+                    {% endfor %}
+
+                    {% for a in about %}
+
+                        <li><a class="white-text" href="#!"><img class="material" src="static/img/icons/location.png">
+                            {{ a.strit }}</a>
+                        </li>
+                    {% endfor %}
+
+                    {% for a in about %}
+                        <li><a class="white-text" href="#!"><img class="material" src="static/img/icons/email.png">
+                            {{ a.email }}</a>
+                        </li>
+                        </ul>
+
+                    {% endfor %}
+
+
+                <p class="z-depth-5">
+                    <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A218444de0dd5818c168bd80ff052708236f1c2784251921549a55325b81710a4&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+                </p>
+            </div>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Связаться с нами</h5>
-          <ul>
-            <li><a class="white-text" href="https://vk.com/prizivnik_75"><img class="ps_icon" src="static/img/icons/vk.png"> </img>VK</a></li>
-            <li><a class="white-text" href="https://www.instagram.com/prizivnik75/"><img class="ps_icon" src="static/img/icons/instagram.png"> INSTAGRAM</a></li>
-            <li><a class="white-text" href="#!"><img class="material" src="static/img/icons/phone.png"> +7914-355-80-91</a></li>
-            <li><a class="white-text" href="#!"><img class="material" src="static/img/icons/location.png"> г.Чита улица Чкалова, 135 офис 201</a></li>
-            <li><a class="white-text" href="#!"><img class="material" src="static/img/icons/email.png"> prizivnik75@yandex.ru</a></li>
-          </ul>
-          <p class="z-depth-5">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A218444de0dd5818c168bd80ff052708236f1c2784251921549a55325b81710a4&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
-          </p>
-        </div>
-      </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
+        <div class="container">
 
-      <p>ИП Лякун А.В<br> ОГРНИП 318753600024796<br> ИНН 751202005413<br> Компания «Призывник 75» не выдаёт военные билеты, их выдают в стенах военного комиссариата.</p>
-      Made by <a class="white-text text-lighten-4" href="http://vk.com/mr_hime">Aleksey Alferov</a> <br><a href="polzovatel" class="white-text bor-text" ><u>Пользовательское соглашение</u></a>
-      </div>
+            <p>ИП Лякун А.В<br> ОГРНИП 318753600024796<br> ИНН 751202005413<br> Компания «Призывник 75» не выдаёт
+                военные билеты, их выдают в стенах военного комиссариата.</p>
+            Made by <a class="white-text text-lighten-4" href="http://vk.com/mr_hime">Aleksey Alferov</a> <br><a
+                href="polzovatel" class="white-text bor-text"><u>Пользовательское соглашение</u></a>
+        </div>
     </div>
-  </footer>
+</footer>
